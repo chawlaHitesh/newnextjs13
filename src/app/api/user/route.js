@@ -1,5 +1,9 @@
 import { NextResponse } from "next/server";
 
 export function GET() {
-  return NextResponse.json({ hellp: "kjabjkjbdshj" });
+  let a = 0;
+  setTimeout(() => {
+    a++;
+  }, 0);
+  return NextResponse.json({ hellp: "kjabjkjbdshj", value: a });
 }
