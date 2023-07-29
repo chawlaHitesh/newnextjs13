@@ -6,7 +6,7 @@ import styled from "styled-components";
 // }
 
 export default styled.div`
-  background: #1e1e1e;
+  background: #1e1e1e; 
 
   /* робимо щоб знизу блок мав закруглення */
   border-bottom-left-radius: 20px;
