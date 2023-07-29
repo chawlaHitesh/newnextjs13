@@ -8,14 +8,15 @@ import Link from "next/link";
 import axios from "axios";
 // import Servercmp from "./(pageinnerapi)/Servercmp";
 export default async function Home() {
-  const a = await fetch(
-    "http://110.227.212.21:3016/api/v1/user/cms?slug=termsandconditions"
-  );
+  const a = await fetch("http://httpbin.org/get", {
+    cache: "no-store",
+  });
+  const right = await a.json();
   return (
     <main className={styles.main}>
       {/* <Blogs /> */}
       {/* <Servercmp /> */}
-      <h1>hellooooooooooooooooo</h1>
+      <h1>{JSON.stringify(right)}</h1>
     </main>
   );
 }
