@@ -17,6 +17,6 @@ export default async function Home() {
       {/* <Blogs /> */}
       {/* <Servercmp /> */}
       <h1>{JSON.stringify(right)}</h1>
-    </main>
+    </main> 
   );
 }
