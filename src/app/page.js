@@ -8,7 +8,7 @@ import Link from "next/link";
 import axios from "axios";
 // import Servercmp from "./(pageinnerapi)/Servercmp";
 export default async function Home() {
-  const a = await fetch("https://newnextjs13.vercel.app/api/user", {
+  const a = await fetch("http://httpbin.org/get", {
     cache: "no-store",
   });
   const right = await a.json();
